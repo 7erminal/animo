@@ -20,35 +20,35 @@ const Features: React.FC = () => {
                 <div className="col-lg-3 course-left">
                     <div className="single-course">
                         <FontAwesomeIcon icon={faRocket} size="lg" className='f-icon' style={{color: '#85c1e9'}} />
-                        <a href="#"><h4 className='single-course-header'>High Performance</h4></a>
+                        <a href="#"><h4 className='single-course-header'>Software Development</h4></a>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisic ing elit, seddo eiusmod tempor incid.idunt ut labore et dolore magna aliqua.
+                            Our team of developers are dedicated to providing the best software solution for your needs while using latest and effective technologies. We are professional and thrive to provide effective scalable yet simple applications to make our clients life easier.
                         </p>
                     </div>
                     <div className="single-course">
                         <FontAwesomeIcon icon={faGear} size="lg" className='f-icon' style={{color: '#85c1e9'}} />
-                        <a href="#"><h4 className='single-course-header'>High Performance</h4></a>
+                        <a href="#"><h4 className='single-course-header'>IT Consultancy</h4></a>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisic ing elit, seddo eiusmod tempor incid.idunt ut labore et dolore magna aliqua.
+                            We provide expert solutions and advice to businesses and organizations on how to improve their IT services, including system architecture, data processing optimization, infrastructure and data security.
                         </p>
                     </div>
                 </div>
                 <div className="col-lg-6 course-middle">
-                    <img className="img-fluid mx-auto d-block" src="/images/Full-Stack-Developer.jpeg" alt="" />
+                    <img className="img-fluid mx-auto d-block" src="/images/stacks.jpeg" alt="" />
                 </div>
                 <div className="col-lg-3 course-right">
                     <div className="single-course">
                         <FontAwesomeIcon icon={faBuilding} size="lg" className='f-icon' style={{color: '#85c1e9'}} />
-                        <a href="#"><h4 className='single-course-header'>High Performance</h4></a>
+                        <a href="#"><h4 className='single-course-header'>UI/UX</h4></a>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisic ing elit, seddo eiusmod tempor incid.idunt ut labore et dolore magna aliqua.
+                            Businesses like to keep their customers engaged through the look and feel of their application. Our UI/UX team is specialized in this field and is dedicated to providing interfaces that are fun and also easy to use.
                         </p>
                     </div>
                     <div className="single-course">
                         <FontAwesomeIcon icon={faPhoneVolume} size="lg" className='f-icon' style={{color: '#85c1e9'}} />
-                        <a href="#"><h4 className='single-course-header'>High Performance</h4></a>
+                        <a href="#"><h4 className='single-course-header'>Performance Testing</h4></a>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisic ing elit, seddo eiusmod tempor incid.idunt ut labore et dolore magna aliqua.
+                            We provide resources for load testing of applications as well as analytics. Trust our team of experts to point you towards solutions that would boost your applications performance.
                         </p>
                     </div>
                 </div>

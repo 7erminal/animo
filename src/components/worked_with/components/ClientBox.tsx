@@ -3,11 +3,13 @@ import React from "react";
 type Props = {
     title: string
     desc: string
+    image: string
 }
 
-const ClientBox: React.FC<Props> = ({title, desc}) => {
+const ClientBox: React.FC<Props> = ({title, desc, image}) => {
     return <div className="client-box">
-        <h4>{title}</h4>
+        <img src={ image } width="40px" height="40px" style={{marginBottom: '5px'}} />
+        <h4 className='mt-2'>{title}</h4>
         <p>
             {desc}
         </p>

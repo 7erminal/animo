@@ -14,12 +14,12 @@ const WorkedWith: React.FC = () => {
                 </div>
             </Row>
             <Row>
-                <Col md={4} sm={6} xs={6}><ClientBox title="Solis Finance" desc="Financial Banking App" /></Col>
-                <Col md={4} sm={6} xs={6}><ClientBox title="GeoMining Consults" desc="Environmental Awareness application in the mining fields" /></Col>
-                <Col md={4} sm={6} xs={6}><ClientBox title="Solis Finance" desc="Financial Banking App" /></Col>
-                <Col md={4} sm={6} xs={6}><ClientBox title="Solis Finance" desc="Financial Banking App" /></Col>
-                <Col md={4} sm={6} xs={6}><ClientBox title="Solis Finance" desc="Financial Banking App" /></Col>
-                <Col md={4} sm={6} xs={6}><ClientBox title="Solis Finance" desc="Financial Banking App" /></Col>
+                <Col md={4} sm={12} xs={12}><ClientBox image="/images/letsRideLogo1.jpeg" title="Let's Ride" desc="Transportation app" /></Col>
+                <Col md={4} sm={12} xs={12}><ClientBox image="/images/groupicon.jpeg" title="GeoMining Consults" desc="Environmental Awareness application in the mining fields" /></Col>
+                <Col md={4} sm={12} xs={12}><ClientBox image="/images/icon_i.png" title="Solis Finance" desc="Financial Banking App" /></Col>
+                {/* <Col md={4} sm={6} xs={6}><ClientBox image="/images/icon_i.png" title="Solis Finance" desc="Financial Banking App" /></Col>
+                <Col md={4} sm={6} xs={6}><ClientBox image="/images/icon_i.png" title="Solis Finance" desc="Financial Banking App" /></Col>
+                <Col md={4} sm={6} xs={6}><ClientBox image="/images/icon_i.png" title="Solis Finance" desc="Financial Banking App" /></Col> */}
             </Row>
         </Container>
     </section>

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Card, Col, Container, Row } from 'react-bootstrap'
+import Slider from './components/slider'
 
 const About: React.FC = () => {
     return <section className='about justify-content-center align-items-center'>
@@ -13,7 +14,9 @@ const About: React.FC = () => {
                         <p className='about-paragraph-header' style={{fontWeight: "300"}}>We are an innovative software development company with expertise in e-commerce apps, payment apps and data collection software. </p>
                     </Col>
                     <Col md={6} className='justify-content-center align-items-center'>
-                        <div className='about-img-container'></div>
+                        <div className='about-img-container'>
+                            <Slider />
+                        </div>
                     </Col>
                 </Row>
             </Container>
