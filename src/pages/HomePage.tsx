@@ -9,6 +9,7 @@ import About from '../components/about/About';
 import WorkedWith from '../components/worked_with/WorkedWith';
 import Footer from '../components/footer/Footer';
 import Header from '../components/nav/Header';
+import OurTeam from '../components/our_team/OurTeam';
 
 const HomePage: React.FC = () => {
     const [scrollPosition, setScrollPosition] = useState<SetStateAction<number>>();
@@ -17,6 +18,7 @@ const HomePage: React.FC = () => {
     const about  = useRef<null | HTMLDivElement>(null)
     const features  = useRef<null | HTMLDivElement>(null)
     const workedWith  = useRef<null | HTMLDivElement>(null)
+    const ourTeam  = useRef<null | HTMLDivElement>(null)
 
     const handleScroll = (e: any) => {
         console.log("Scroll called")
@@ -51,6 +53,8 @@ const HomePage: React.FC = () => {
             features.current?.scrollIntoView({behavior: 'smooth', block: 'start'})
         } else if(type_=='workedWith'){
             workedWith.current?.scrollIntoView({behavior: 'smooth', block: 'start'})
+        } else if(type_=='ourTeam'){
+            ourTeam.current?.scrollIntoView({behavior: 'smooth', block: 'start'})
         }
     }
 
@@ -63,6 +67,8 @@ const HomePage: React.FC = () => {
             <About />
             <div ref={features}></div>
             <Features />
+            <div ref={ourTeam}></div>
+            <OurTeam />
             <div ref={workedWith}></div>
             <WorkedWith />
             <Footer scrollToView_={scrollToView} />
