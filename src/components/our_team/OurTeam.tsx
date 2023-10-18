@@ -1,6 +1,7 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import ProfileBox from "./components/ProfileBox";
+import { Link } from "react-router-dom"
 
 const OurTeam: React.FC = () => {
     return <section className="workedWith">
@@ -14,17 +15,17 @@ const OurTeam: React.FC = () => {
                 </div>
             </Row>
             <Row>
-                <Col md={3} sm={12} xs={12} data-aos="zoom-out" data-aos-delay="300" data-aos-duration="600" className="mt-2"><ProfileBox image="/images/wilson.jpg" name="Wilson Abakisi" desc="A leader who shows dedication and commitment to whatever cause he's working for. Wilson has a 'never give up' attitude which has been fundamental in the progress of the company." role="Founder" /></Col>
-                <Col md={3} sm={12} xs={12} data-aos="zoom-out" data-aos-delay="450" data-aos-duration="600" className="mt-2"><ProfileBox image="/images/bede.jpeg" name="Bede Abbe" desc="Bede is a visionary who always takes innovation to the next level. An abled software engineer who has been working in the IT space for all of his working career, Bede is well informed and knowledgeable in matters concerning software development and system functionalities." role="Software Engineer" /></Col>
-                <Col md={3} sm={12} xs={12} data-aos="zoom-out" data-aos-delay="600" data-aos-duration="600" className="mt-2"><ProfileBox image="/images/eric.jpg" name="Eric Amankyim" desc="Eric Amankyim is Google Certified User Experience Engineer who is passionate about creating outstanding digital experiences. His unique blend of design and development expertise allows him to bring innovation and user-centricity to every project." role="UI/UX Engineer" /></Col>
-                <Col md={3} sm={12} xs={12} data-aos="zoom-out" data-aos-delay="300" data-aos-duration="600" className="mt-2"><ProfileBox image="/images/wilson.jpg" name="Louis Yelifari" desc="An brilliant and innovative individual, Louis has always challenged himself to do the impossible. Its no wonder he is a key figure in projects and solutions provided by the company." role="Solutions Architect and project manager" /></Col>
+                <Col md={3} sm={12} xs={12} data-aos="zoom-out" data-aos-delay="300" data-aos-duration="600" className="mt-2" style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}><ProfileBox image="/images/wilson.jpg" name="Wilson Abakisi" desc="A leader who shows dedication and commitment to whatever cause he's working for. Wilson has a 'never give up' attitude which has been fundamental in the progress of the company." role="Founder" /></Col>
+                <Col md={3} sm={12} xs={12} data-aos="zoom-out" data-aos-delay="450" data-aos-duration="600" className="mt-2" style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}><ProfileBox image="/images/bede.jpeg" name="Bede Abbe" desc="Bede is a visionary who always takes innovation to the next level. An abled software engineer who has been working in the IT space for all of his working career, Bede is well informed and knowledgeable in matters concerning software development and system functionalities." role="Software Engineer" /></Col>
+                <Col md={3} sm={12} xs={12} data-aos="zoom-out" data-aos-delay="600" data-aos-duration="600" className="mt-2" style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}><ProfileBox image="/images/eric.jpg" name="Eric Amankyim" desc="Eric Amankyim is Google Certified User Experience Engineer who is passionate about creating outstanding digital experiences. His unique blend of design and development expertise allows him to bring innovation and user-centricity to every project." role="UI/UX Engineer" /></Col>
+                <Col md={3} sm={12} xs={12} data-aos="zoom-out" data-aos-delay="300" data-aos-duration="600" className="mt-2" style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}><ProfileBox image="/images/Louis.jpg" name="Louis Yelifari" desc="An brilliant and innovative individual, Louis has always challenged himself to do the impossible. Its no wonder he is a key figure in projects and solutions provided by the company." role="Solutions Architect and project manager" /></Col>
                 {/* <Col md={3} sm={12} xs={12} data-aos="zoom-out" data-aos-delay="750" data-aos-duration="600"><ProfileBox image="/images/icon_i.png" name="Solis Finance" desc="Financial Banking App" role="UI/UX Engineer" /></Col> */}
                 {/* <Col md={4} sm={6} xs={6}><ClientBox image="/images/icon_i.png" title="Solis Finance" desc="Financial Banking App" /></Col>
                 <Col md={4} sm={6} xs={6}><ClientBox image="/images/icon_i.png" title="Solis Finance" desc="Financial Banking App" /></Col>
                 <Col md={4} sm={6} xs={6}><ClientBox image="/images/icon_i.png" title="Solis Finance" desc="Financial Banking App" /></Col> */}
             </Row>
             <Row className="my-4" style={{display: 'flex', alignItems: 'right', textAlign: 'right', justifyContent: 'end'}}>
-                <Col><span className="mx-4 my-4">See more</span></Col>
+                <Col><span className="mx-4 my-4"><Link to='/team'>See more</Link></span></Col>
             </Row>
         </Container>
     </section>

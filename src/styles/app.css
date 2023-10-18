@@ -1,6 +1,6 @@
 html{
     width: 100%;
-    /* overflow: hidden; */
+    overflow-x: hidden;
 }
 body{
     font-family: "Poppins", sans-serif;
@@ -240,6 +240,33 @@ body{
 
   .landing-header-image{
     width: 700px;
+}
+
+.team-header{
+    margin-top: 100px;
+}
+
+.pictureTeam{
+    width: 300px;
+    height: 300px;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.contentTeam{
+    /* padding-top: 40px; */
+    /* padding-bottom: 40px; */
+    width: 100%;
+    display: flex;
+    /* text-align: center; */
+    justify-content: center;
+    font-size: 20px;
+    /* font-weight: 600; */
+    line-height: 32px;
+    font-family: "sans-serif";
+    letter-spacing: 2px;
 }
 
 

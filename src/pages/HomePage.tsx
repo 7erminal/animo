@@ -1,9 +1,6 @@
 import React, { useState, useEffect, useRef, SetStateAction } from 'react'
 import DateDisplay from '../components/DateDisplay'
 import LandingSection from '../components/landing_section/LandingSection'
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import Features from '../components/features/Features';
 import About from '../components/about/About';
 import WorkedWith from '../components/worked_with/WorkedWith';
@@ -67,6 +64,8 @@ const HomePage: React.FC = () => {
             <About />
             <div ref={features}></div>
             <Features />
+            <div ref={workedWith}></div>
+            <WorkedWith />
             <div ref={ourTeam}></div>
             <OurTeam />
             <div ref={workedWith}></div>

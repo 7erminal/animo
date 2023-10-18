@@ -9,6 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'atropos/css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import OurTeamPage from './pages/OurTeamPage'
 
 const RootComponent: React.FC = () => {
     
@@ -20,6 +21,7 @@ const RootComponent: React.FC = () => {
             <Routes>
                 <Route path="*" element={<NotFoundPage />} />
                 <Route path={ROUTES.HOMEPAGE_ROUTE} element={<HomePage />} />
+                <Route path={ROUTES.TEAMPAGE_ROUTE} element={<OurTeamPage />} />
             </Routes>
         </Router>
     )
