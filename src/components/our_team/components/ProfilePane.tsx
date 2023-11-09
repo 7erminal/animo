@@ -16,7 +16,9 @@ const ProfilePane: React.FC<Props> = ({color_, name, picture, role, description}
         <Container fluid>
             <Row>
                 <Col xs={12} md={4}><div className="pictureTeam" style={{backgroundImage: `url(${picture})`, backgroundSize: 'cover', backgroundPosition: 'center'}}></div></Col>
-                <Col xs={12} md={8} style={{ position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}><div className="contentTeam"><p>{description}</p></div></Col>
+                <Col xs={12} md={8} style={{ position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
+                    <div className="contentTeam"><p>{description}</p></div>
+                </Col>
             </Row>
         </Container>
     </section>
